@@ -129,7 +129,7 @@ function validateForm() {
         selectEnabled(id)
         showModal();
     }
-      //Funcion para 
+      //Funcion para editar usuario
     
     function editUser(id) {
         clearData(id);
