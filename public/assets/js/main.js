@@ -1,5 +1,5 @@
 
-/**Varibles*/
+/**Variables*/
 const myModal = new bootstrap.Modal(document.getElementById("modalUser"), {});
 var objForm = null;
 var elements = null;
@@ -83,16 +83,9 @@ function getDataForm(id) {
     }
 }
 
-/**
- * Author:
- * Date:08/01/2024
- * Update Date:
- * Descriptions: This functions is clearData
- * Return:
- * Parameter: 
- * @id is identification the form
 
-*/
+//This functions is clearData
+
 function clearData(id) {
 
     objForm = document.getElementById(id);
@@ -104,16 +97,8 @@ function clearData(id) {
     }
 }
 
-/**
- * Author:
- * Date:08/01/2024
- * Update Date:
- * Descriptions: This functions is formDisabled
- * Return:
- * Parameter: 
- * @id is identification the form
+//This functions is formDisabled
 
-*/
 function formDisabled(id) {
     objForm = document.getElementById(id);
     elements = objForm.querySelectorAll("input");
@@ -124,16 +109,8 @@ function formDisabled(id) {
     }
 }
 
-/**
- * Author:
- * Date:08/01/2024
- * Update Date:
- * Descriptions: This functions is formEnable
- * Return:
- * Parameter: 
- * @id is identification the form
+//This functions is formEnable
 
-*/
 function formEnable(id) {
     objForm = document.getElementById(id);
     elements = objForm.querySelectorAll("input");
@@ -144,16 +121,10 @@ function formEnable(id) {
     }
 }
 
-/**
- * Author:
- * Date:08/01/2024
- * Update Date:
- * Descriptions: This functions is formEnableEdit
- * Return:
- * Parameter: 
- * @id is identification the form
+//This functions is formEnableEdit
 
-*/
+
+
 function formEnableEdit(id) {
     objForm = document.getElementById(id);
     elements = objForm.querySelectorAll(".input_disabled");
@@ -164,32 +135,17 @@ function formEnableEdit(id) {
     }
 }
 
-/**
- * Author:
- * Date:08/01/2024
- * Update Date:
- * Descriptions: This functions is createUser
- * Return:
- * Parameter: 
- * @id is identification the form
+//This functions is createUser
 
-*/
 function createUser(id) {
     clearData(id);
     formEnable(id);
     showModal();
 }
 
-/**
- * Author:
- * Date:08/01/2024
- * Update Date:
- * Descriptions: This functions is editUser
- * Return:
- * Parameter: 
- * @id is identification the form
 
-*/
+//This functions is editUser
+
 function editUser(id, idUser) {
     clearData(id);
     formEnable(id);
@@ -198,16 +154,9 @@ function editUser(id, idUser) {
     alert("ID USER" + idUser);
 }
 
-/**
- * Author:
- * Date:08/01/2024
- * Update Date:
- * Descriptions: This functions is deleteUser
- * Return:
- * Parameter: 
- * @id is identification the user
 
-*/
+//This functions is deleteUser
+
 function deleteUser(id) {
     let getConfirm = window.confirm("Seguro desea Eliminar?");
     if (getConfirm) {
@@ -217,15 +166,9 @@ function deleteUser(id) {
     }
 }
 
-/**
- * Author:
- * Date:08/01/2024
- * Update Date:
- * Descriptions: This functions is deleteUser
- * Return:
- * Parameter: 
- * @id is identification the form
- */
+
+//This functions is view user
+
 function viewUser(id, idUser) {
 
     clearData(id);
@@ -234,28 +177,16 @@ function viewUser(id, idUser) {
     alert("ID USER" + idUser);
 }
 
-/**
- * Author:
- * Date:08/01/2024
- * Update Date:
- * Descriptions: This functions is showModal
- * Return:
- * Parameter: 
- * @id is identification the form
- */
+
+//This functions is show Modal
+
 function showModal() {
     myModal.show();
 }
 
-/**
- * Author:
- * Date:08/01/2024
- * Update Date:
- * Descriptions: This functions is hiddenModal
- * Return:
- * Parameter: 
- * @id is identification the form
- */
+
+//This functions is hidden Modal
+
 function hiddenModal() {
     myModal.hidden();
 }

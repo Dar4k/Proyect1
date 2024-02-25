@@ -30,7 +30,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-6 mx-auto">
-                    <form id="form_login" action="../../Config/LoginControllerValidate.php" method="POST" >
+                    <form id="form_login" action="../../Controllers/LoginControllerValidate.php" method="POST" >
                         <div class="mb-3">
                             <label for="User_user" class="form-label">Email
                                 address</label>

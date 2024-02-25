@@ -38,7 +38,7 @@ if (!empty($_GET) && isset($_GET)) {
     <div class="container-fluid">
         <div class="row">
             <div class="col-6 mx-auto">
-                <form id="form_login" action="../../Config/LoginControllerChangePassword.php" method="POST">
+                <form id="form_login" action="../../Controllers/LoginControllerChangePassword.php" method="POST">
                     <input type="hidden" name="User_id" id="User_id" value="<?=$userId?>" > 
                 <div class="mb-3">
                         <label for="User_password" class="form-label">New Password
