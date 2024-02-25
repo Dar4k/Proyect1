@@ -43,32 +43,30 @@
 </head>
 <body>
         <!---Container preload-->
-    <button class="btn btn-secondary preload " type="button text- center" disabled>
+    <!-- <button class="btn btn-secondary preload " type="button text- center" disabled>
         <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
         Loading...
-    </button>
+    </button> -->
         <!---End Container preload-->
-    <br>
+
+        <!---Nav table-->
+    <ul class="nav justify-content-end navbar-light" style="background-color: #cbd1f7e3;">
+        <li class="nav-item">
+            <a class="nav-link bg-" aria-current="page" href="#">User</a>
+        </li>
+        <li class="nav-item bg-">
+            <a class="nav-link" href="#">Product</a>
+        </li>
+        <li class="nav-item bg-">
+            <a class="nav-link " href="#">Branch</a>
+        </li>
+    </ul>
+            <!--- End Nav table-->
 
         <!---Container table-->
-        <div class="container-fluid">
+        <div class="container-fluid" >
             <div class="row">
                 <div class="col-8 mx-auto">
-
-                    <!---Nav table-->
-                    <ul class="nav justify-content-end">
-                        <li class="nav-item ">
-                            <a class="nav-link bg-light" aria-current="page" href="#">User</a>
-                        </li>
-                        <li class="nav-item bg-light">
-                            <a class="nav-link" href="#">Product</a>
-                        </li>
-                        <li class="nav-item bg-light">
-                            <a class="nav-link " href="#">Branch</a>
-                        </li>
-                    </ul>
-                    <br>
-
                     <h3>List User</h3>
                     <!---Btn Add -->
                     <button type="button" class="btn btn-info" onclick="createUser('form_login')"

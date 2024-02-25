@@ -1,12 +1,5 @@
-/**
- * Author:Willian Moreno
- * Date:07/01/2024
- * Update Date:07/01/2024
- * Descriptions:
- * 
- */
 
-/**This funtions is general for validate the form HTML */
+//This funtions is general for validate the form HTML
 function validateForm() {
     /**This is the variable declarations*/
         var objForm=document.getElementById("form_login");
@@ -23,16 +16,8 @@ function validateForm() {
         }
     
     }
-    /**
-     * Author:DIEGO CASALLAS
-     * Date:08/01/2024
-     * Update Date:
-     * Descriptions: This functions is for get form object and validate
-     * Return:value boolean
-     * Parameter: 
-     * @id is identification the form
-     * @e is event the form
-     */
+   // This functions is for get form object and validate
+
     function getData(id,e) {
     
             var objForm=document.getElementById(id);
@@ -55,17 +40,9 @@ function validateForm() {
             return  false;
         
         }
-        //getDataJson();
-    /**
-     * Author:DIEGO CASALLAS
-     * Date:08/01/2024
-     * Update Date:
-     * Descriptions: This functions is for get form object and validate
-     * Return:value boolean
-     * Parameter: 
-     * @id is identification the form
-     * @e is event the form
-     */
+
+    //This functions is for get form object and validate
+
     
     function clearData(id) {
     
